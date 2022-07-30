@@ -31,5 +31,7 @@ basic js for chall
   - deploys Totally-Secure-Dapp to ganache(ganache must already be running)
 - `interact-local.js`
   - script to interact with local contract from `deploy.js`
+- `Initializable,sol` and `TotallySecureDapp.sol`
+  - arent needed to run js scripts or anything, but nice to reference
 - TODO: add `interact-remote.js`
   - (when i make it), will let you interact with actual Dapp from chall
