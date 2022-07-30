@@ -24,14 +24,14 @@ basic js for chall
 
 ## FILES:
 - `abi.json`
-  - came from [https://ropsten.etherscan.io/address/0xb6514151340FF027469EAFcBB4c775C993A6Bdb0#code](https://ropsten.etherscan.io/address/0xb6514151340FF027469EAFcBB4c775C993A6Bdb0#code): "Contract ABI" => "Export ABI" => "Raw/Text Format"
+    - came from [https://ropsten.etherscan.io/address/0xb6514151340FF027469EAFcBB4c775C993A6Bdb0#code](https://ropsten.etherscan.io/address/0xb6514151340FF027469EAFcBB4c775C993A6Bdb0#code): "Contract ABI" => "Export ABI" => "Raw/Text Format"
 - `bytecode.bin`
-  - came from same link above^ : "Contract Creation Code"
+    - came from same link above^ : "Contract Creation Code"
 -  `deploy.js`
-  - deploys Totally-Secure-Dapp to ganache(ganache must already be running)
+    - deploys Totally-Secure-Dapp to ganache(ganache must already be running)
 - `interact-local.js`
-  - script to interact with local contract from `deploy.js`
-- `Initializable,sol` and `TotallySecureDapp.sol`
-  - arent needed to run js scripts or anything, but nice to reference
+    - script to interact with local contract from `deploy.js`
+- `Initializable.sol` and `TotallySecureDapp.sol`
+    - arent needed to run js scripts or anything, but nice to reference
 - TODO: add `interact-remote.js`
-  - (when i make it), will let you interact with actual Dapp from chall
+    - (when i make it), will let you interact with actual Dapp from chall
