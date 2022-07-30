@@ -17,4 +17,14 @@ basic js for chall
   - [https://marketplace.visualstudio.com/items?itemName=NomicFoundation.hardhat-solidity](https://marketplace.visualstudio.com/items?itemName=NomicFoundation.hardhat-solidity)
   - sidenote: hardhat = eth development framework. but the same people also made this solidity syntax highlighter
 
-## HOW TO USE:
+## FILES:
+- `abi.json`
+  - came from [https://ropsten.etherscan.io/address/0xb6514151340FF027469EAFcBB4c775C993A6Bdb0#code](https://ropsten.etherscan.io/address/0xb6514151340FF027469EAFcBB4c775C993A6Bdb0#code): "Contract ABI" => "Export ABI" => "Raw/Text Format"
+- `bytecode.bin`
+  - came from same link above^ : "Contract Creation Code"
+-  `deploy.js`
+  - deploys Totally-Secure-Dapp to ganache(ganache must already be running)
+- `interact-local.js`
+  - script to interact with local contract from `deploy.js`
+- TODO: add `interact-remote.js`
+  - (when i make it), will let you interact with actual Dapp from chall
