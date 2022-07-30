@@ -4,6 +4,11 @@ basic js for chall
 ## TODO: make interact-remote.js script
 
 ## SETUP:
+- install npm and node
+  - `sudo apt install npm`
+  - same for node
+  - node runs .js files, npm lets you install ethers
+
 - _install ethers_
   - `npm install ethers` (makes `node_modules` dir to use ethers in that dir only)
   - __or__ `sudo npm install ethers -g` (idk how this works, but it makes ethers lib accessible from anywhere)
