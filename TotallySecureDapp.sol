@@ -1,19 +1,42 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.4.24;
-
+// slot 0 = _initialized, _initializing
 import './Initializable.sol';
+// Slot Layout:
+/*
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_initialized/, _initilizing | 0 = _authors[2^256 - keccak256(3)]
+_contractId                 | 1
+_owner                      | 2 = _authors[2^256 - keccak256(3) + 2]
+_authors[] length           | 3
+_posts[] length             | 4
+_flagCaptured               | 5
+                            |
+...                         |
+_authors[0](address)        | keccak256(3)
+_authors[1](address)        | keccak256(3) + 1
+...                         |
+                            |
+_posts[0](string title)     | keccak256(4)
+_posts[0](string content)   | keccak256(4) + 1
+_posts[1](title)            | keccak256(4) + 2
+_posts[1](content)          | keccak256($) + 3
+...                         |
+                            | 2^255 = _authors[2^255 - keccak256(3)]
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
+*/
 contract TotallySecureDapp is Initializable {
     struct Post {
         string title;
         string content;
     }
 
-    string public _contractId;
-    address public _owner;
-    address[] public _authors;
-    Post[] public _posts;
-    bool public _flagCaptured;
+    string public _contractId; // slot 1 - ?? bytes
+    address public _owner; // slot 2 - 20 bytes = 0xba...c9
+    address[] public _authors; // slot 3 = length of array, slot keccak256(3) = first element(address of first author)
+    Post[] public _posts; // slot 4 = length of array, slot keccak256(4) = first element(title of first post)
+    bool public _flagCaptured; // slot 5
 
     event PostPublished(address indexed author, uint256 indexed index);
     event PostEdited(address indexed author, uint256 indexed index);
