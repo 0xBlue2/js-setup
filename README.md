@@ -1,8 +1,6 @@
 # js-setup
 basic js for chall
 
-## TODO: make interact-remote.js script
-
 ## SETUP:
 - install npm and node
   - `sudo apt install npm`
@@ -33,5 +31,5 @@ basic js for chall
     - script to interact with local contract from `deploy.js`
 - `Initializable.sol` and `TotallySecureDapp.sol`
     - arent needed to run js scripts or anything, but nice to reference
-- TODO: add `interact-remote.js`
-    - (when i make it), will let you interact with actual Dapp from chall
+- `interact-remote.js`
+    - script to interact with actual dapp from chall
