@@ -8,6 +8,10 @@ basic js for chall
     - solution: remove newline after cloning repo
 
 ## SETUP:
+- _create package.json_
+    - without it, npm tries to install packages to your home directory(~/node_modules) I think
+    - __add pair of brackes('{}') to package.json__
+    - linux: ``echo '{}' > package.json``
 - _install npm and node_
   - `sudo apt install npm`
   - same for node
