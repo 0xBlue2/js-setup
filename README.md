@@ -8,7 +8,7 @@ basic js for chall
     - solution: remove newline after cloning repo
 
 ## SETUP:
-- install npm and node
+- _install npm and node_
   - `sudo apt install npm`
   - same for node
   - node runs .js files, npm lets you install ethers
