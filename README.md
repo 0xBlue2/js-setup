@@ -26,7 +26,7 @@ basic js for chall
   - dont really need to "install" for linux, its just a standalone appimage
   - __get from: [https://trufflesuite.com/ganache/](https://trufflesuite.com/ganache/)__
   
-- _optional: install vscode extension(if on kali linux, it's not available in `code-oss` - you have to use the propietary version from msft)_
+- _optional: install vscode extension(~~if on kali linux, it's not available in `code-oss` - you have to use the propietary version from msft~~ i think its available now, dont quote me tho)_
   - [https://marketplace.visualstudio.com/items?itemName=NomicFoundation.hardhat-solidity](https://marketplace.visualstudio.com/items?itemName=NomicFoundation.hardhat-solidity)
   - sidenote: hardhat = eth development framework. but the same people also made this solidity syntax highlighter
 
