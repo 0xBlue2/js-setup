@@ -3,7 +3,7 @@ basic js for chall
 
 
 ## KNOWN ISSUES:
-- `bytecode.bin` is has extra newline, making it 2 lines long
+- `bytecode.bin` has extra newline, making it 2 lines long
     - ethers will interpret that \n as a byte in bytecode, reports "Error: invalid bytecode"
     - solution: remove newline after cloning repo
 
